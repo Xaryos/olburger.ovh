@@ -69,7 +69,7 @@ nav {
 	height: 2px;
 	background-color: black;
   transform: translate3d(-100%, 0, 0);
-  transition: transform 500ms;
+  transition: transform 200ms;
 }
 
 .nav_Object:hover::after, 
