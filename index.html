@@ -10,10 +10,16 @@
 
 </head>
 <body>
+    <!-- Up button -->
+    <div class="buttonReturn">
+        <div class="arrowUp"></div>
+    </div>
     <!-- Header -->
     <header>
+        <div class="logoContainer">
             <img id="logo" src="./img/Ol'burger logo.png" alt="logo OlBurger">
-        <div class="titleContainer">
+        </div>
+        <div class="titleContainer flexCentre">
             <h1>Ol'Burger</h1>
         </div>
         <div class="nav_container">
@@ -28,14 +34,12 @@
                             </p>
                        </div>
                        <div class="nav_blocItem flexCentre">
-
                             <i class="fa-solid fa-basket-shopping"></i>
                             <p class="nav_Object">  
                                 Panier
                             </p>
                        </div>
                        <div class="nav_blocItem flexCentre">
-
                             <i class="fa-solid fa-headset "></i>
                             <p class="nav_Object"> 
                                 Contact
@@ -44,64 +48,102 @@
             </nav>
         </div>
     </header>
-    <!-- Command Button -->
-    <div class="divCommandButton">
-        <button class="commandButton">Commander</button>
-    </div>
+    <div class="underlineSeparationHeader"></div>
+    <!-- background img -->
+    <main class="backgroundGlobal">
 
-    <div class="fontImageleft">
-        <img src="./img/leftburger.jpg" alt="leftFontImg">
-    </div>
-    <div class="fontImageRight">
-        <img src="./img/rightburger.webp" alt="rightFontImg">
-    </div>
-    <div class="underlineSeparation"></div>
-    <div class="container">
-        <!-- 1st section -->
-        <section id="wware">
-            <h2> Qui sommes nous ?</h2>
-            <p class="textsize">
-                Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. 
-                Quisque tincidunt odio velit,
-                 nec congue elit vestibulum id. 
-            </p>
-        </section>
-        <div class="underlineSeparation"></div>
-        <!-- 2nd section -->
-        <section id="menuOverview">
-            <h2>Ce que l'on vous propose</h2>
-            <p id="smallParagraph">
-                cliquez sur un menu pour accéder à la page Menu
-            </p>
-            <div class="cardMenu">
-                <div class="imgMenu">
-                    <img src="" alt="imgMenu">
-                </div>
-                <div class="bodyMenu">
-                    <h3>Menu title</h3>
-                    <p> menu description</p>
-                </div>
+        <div class="fontImageleft">
+            <img class="leftImg"src="./img/leftburger.jpg" alt="leftFontImg">
+        </div>
+
+        <div class="container">
+            <!-- Command Button -->
+            <div class="divCommandButton flexCentre">
+                <button class="commandButton">Commander</button>
             </div>
-        </section>
-    </div>
+            <div class="underlineSeparation"></div>
+            <!-- 1st section -->
+            <section id="wware">
+                <h2> Qui sommes nous ?</h2>
+                <p class="textsize">
+                    Nous sommes un petit restaurant fabriquants artisanaux
+                    de burger et  de nourriture rapide à des prix moyens. <br>
+                    Vous pouvez nous retrouver au <strong> 1 rue du moulin, PARIS</strong>. <br>
+                    Nous disposons aussi d'un service de commande en ligne afin de simplifier 
+                    vos repas !
+                    <br>
+                    alors ? qu'attendez-vous pour venir manger, ou vous faire livrer !
+                </p>
+            </section>
+            <div class="underlineSeparation"></div>
+            <!-- 2nd section -->
+            <section id="menuOverview">
+                <h2>Ce que l'on vous propose</h2>
+                <p id="smallParagraph">
+                    cliquez sur un menu pour accéder à la page Menu
+                </p>
+                <div class="menuBloc">
+                    <div class="cardMenu">
+                        <div class="imgMenu">
+                            <img class="imgCard" src="./img/BurgerMenu1.jpg" alt="imgMenu">
+                        </div>
+                        <div class="bodyMenu">
+                            <h3>Menu Master oignon </h3>
+                            <p> Burger oignons frais & frits</p>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="imgMenu">
+                            <img class="imgCard" src="./img/BurgerMenu2.jpg" alt="imgMenu">
+                        </div>
+                        <div class="bodyMenu">
+                            <h3>Menu Grilled bacon</h3>
+                            <p> Burger double bacon grillés</p>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="imgMenu">
+                            <img class="imgCard" src="./img/BurgerMenu3.jpg" alt="imgMenu">
+                        </div>
+                        <div class="bodyMenu">
+                            <h3>Menu Master cheese</h3>
+                            <p> Burger chedar fondant</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="fontImageRight">
+            <img class="rightImg" src="./img/rightburger.webp" alt="rightFontImg">
+        </div>
+
+        
+    </main>
     <!-- footer -->
     <footer>
+        
+    <div class="endLogo">
+        <img id="endLogo" src="./img/Ol'burger logo.png" alt="footerLogo">
+    </div>
         <div class="footerBar">
-            <div class="endLogo">
-                <img src="./img/Ol'burger logo.png" alt="footerLogo">
-            </div>
             <div class="divContact">
-                <h2>Nous contacter :</h2>
+                <h3>Nous contacter :</h3>
                 <div class="informationContact">
-                    <p>tel :</p>
-                    <p>email :</p>
-                </div>
-                <div class="buttonFooter">
-                    <button class="buttonContact">Contact</button>
+                    <div class="flexStart">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <p class="spaceGap">Téléphone : <i>04. 05. 88. 06. 00</i> </p>
+                    </div>
+                    <div class="flexStart">
+                        <i class="fa-solid fa-house"></i>
+                        <p class="spaceGap">Adresse : <i>1 rue du moulin, Paris</i></p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>
