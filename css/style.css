@@ -53,6 +53,7 @@ body {
     background-color: white;
     clip-path: polygon(50% 0, 0 100%, 100% 100%);
 }
+
 /* Header */
  
 h1 {
@@ -275,4 +276,71 @@ footer {
 }
 .spaceGap {
     margin-left: 3%;
+}
+
+
+
+/* *****************MEDIA QUERIES************************** */
+
+
+/* ------------------Tablette------------------------------ */
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+/* //////// UP BUTTON ////////// */
+.buttonReturn {
+    width: 40px;
+    height: 40px;
+}
+.arrowUp {
+
+    width: 25px;
+    height: 15px;
+}
+/* //////////////// HEADER ///////////// */
+.headerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+/* Logo container */
+.logoContainer{
+    width: 20%;
+    height: auto;
+    align-self: center;
+}
+#logo {
+    width: 100%;
+}
+
+/* Title container */
+.titleContainer {
+    width: auto;
+}
+
+/* Navigation menu */
+
+.nav_container {
+    width: 80%;
+
+}
+.nav_blocItem{
+    width: auto;
+    height: auto;
+    margin: 0 15% 0 15%;
+}
+.nav_Object {
+    padding: 0;
+    overflow: visible;
+    margin-left: 10%;
+}
+.nav_Object::after {
+    display: none;
+}
 }
