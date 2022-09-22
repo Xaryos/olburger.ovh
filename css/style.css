@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 * {
     box-sizing: border-box;
     font-family: "Kanit";
@@ -16,16 +17,19 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .flexAround {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .flexBetween {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .flexStart {
     display: flex;
     align-items: center;
@@ -47,6 +51,7 @@ body {
     bottom: 20px;
     cursor: pointer;
 }
+
 .arrowUp {
     width: 32px;
     height: 20px;
@@ -55,7 +60,7 @@ body {
 }
 
 /* Header */
- 
+
 h1 {
     font-family: "Kanit";
     font-size: 2.1em;
@@ -72,9 +77,11 @@ header {
 #logo {
     width: 35%;
 }
+
 .logoContainer {
     width: 30%;
 }
+
 .titleContainer {
     width: 30%;
 }
@@ -94,54 +101,59 @@ nav {
     justify-content: space-between;
     width: 100%;
 }
+
 .nav_container {
     display: flex;
     justify-content: space-between;
     width: 30%;
 }
-.div_NavObject
-{
+
+.div_NavObject {
     margin-right: 10%;
     width: 100%;
 }
+
 .nav_blocItem {
     width: 20%;
     height: 30%;
     cursor: pointer;
 }
+
 .nav_Object {
-	display: block;
-	position: relative;
-	padding: 0.2em 0;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
     overflow: hidden;
     padding-left: 5%;
     font-size: larger;
 }
 
 .nav_Object::after {
-	content: '';
-	position: absolute;
+    content: '';
+    position: absolute;
     align-self: center;
-	bottom: 0;
-	left: 0;
-	width: 110%;
-	height: 2px;
-	background-color: black;
+    bottom: 0;
+    left: 0;
+    width: 110%;
+    height: 2px;
+    background-color: black;
     transform: translate3d(-100%, 0, 0);
     transition: transform 200ms;
 }
 
-.nav_Object:hover::after, 
+.nav_Object:hover::after,
 .nav_Object:focus::after {
-  transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
- /* Button command */
+
+/* Button command */
 .divCommandButton {
-    margin: 0% 0 5% 0 ;
+    margin: 0% 0 5% 0;
 }
- .commandButton {
+
+.commandButton {
     width: 60%;
-    
+
     background-color: rgb(134, 19, 19);
     color: white;
     font-size: larger;
@@ -151,17 +163,17 @@ nav {
     cursor: pointer;
 
     transition: background-color 300ms, color 300ms, box-shadow 300ms;
- }
+}
 
- .commandButton:hover {
+.commandButton:hover {
     color: whitesmoke;
     background-color: rgb(170, 15, 15);
     box-shadow: rgba(0, 0, 0, 0.486) 4px 5px 4px;
     transform: transition();
- }
+}
 
 
- /* Background img */
+/* Background img */
 
 .backgroundGlobal {
     display: flex;
@@ -171,6 +183,7 @@ nav {
     background-repeat: no-repeat;
     background-position: right;
 }
+
 /* separation point */
 
 .underlineSeparation {
@@ -178,9 +191,10 @@ nav {
     height: 2px;
     background-color: black;
 }
+
 /* Container */
 
-.container{
+.container {
     height: 100%;
     width: 35%;
     background-color: white;
@@ -202,19 +216,23 @@ nav {
     flex-direction: column;
     width: 100%;
 }
+
 .menuBloc {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
+
 #smallParagraph {
     font-size: medium;
-    color : black;
+    color: black;
 }
+
 h2 {
     margin: 2% 0 0 0;
 }
+
 /* Card */
 
 .cardMenu {
@@ -225,16 +243,18 @@ h2 {
     transition: background-color 300ms, width 300ms, height 300ms, box-shadow 300ms;
 
 }
+
 .cardMenu:hover {
     background-color: rgb(163, 162, 162);
-    width: 31%;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.486) 4px 5px 4px;
     transform: transition();
 }
+
 .imgMenu {
     width: 100%;
 }
+
 .imgCard {
     width: 100%;
     height: 100px;
@@ -253,9 +273,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.endLogo {
+
+.divEndLogo {
     width: 50%;
 }
+
 #endLogo {
     width: 30%;
 }
@@ -274,6 +296,7 @@ footer {
 .divContact {
     width: 50%;
 }
+
 .spaceGap {
     margin-left: 3%;
 }
@@ -288,59 +311,209 @@ footer {
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-/* //////// UP BUTTON ////////// */
-.buttonReturn {
+    /* //////// UP BUTTON ////////// */
+    .buttonReturn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrowUp {
+
+        width: 25px;
+        height: 15px;
+    }
+
+    /* //////////////// HEADER ///////////// */
+    .headerContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Logo container */
+    .logoContainer {
+        width: 20%;
+        height: auto;
+        align-self: center;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    /* Title container */
+    .titleContainer {
+        width: auto;
+    }
+
+    /* Navigation menu */
+
+    .nav_container {
+        width: 80%;
+
+    }
+
+    .nav_blocItem {
+        width: auto;
+        height: auto;
+        margin: 0 15% 0 15%;
+    }
+
+    .nav_Object {
+        padding: 0;
+        overflow: visible;
+        margin-left: 10%;
+    }
+
+    .nav_Object::after {
+        display: none;
+    }
+
+    /* Main container  */
+    .container {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .footerBar {
+        justify-content: center;
+    }
+    .divContact {
+        width: auto;
+        justify-content: center;
+    }
+    #endLogo {
+        width: 50%;
+    }
+    .divEndLogo {
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* ------------------------Téléphones------------------------- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 420px)  {
+    
+ /* //////// UP BUTTON ////////// */
+ .buttonReturn {
     width: 40px;
     height: 40px;
 }
+
 .arrowUp {
 
     width: 25px;
     height: 15px;
 }
+
 /* //////////////// HEADER ///////////// */
 .headerContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 header {
     justify-content: center;
     flex-direction: column;
     width: 100%;
 }
+
 /* Logo container */
-.logoContainer{
-    width: 20%;
+.logoContainer {
+    width: 40%;
     height: auto;
     align-self: center;
 }
+
 #logo {
     width: 100%;
 }
 
-/* Title container */
-.titleContainer {
-    width: auto;
-}
+    /* Title container */
+    .titleContainer {
+        width: auto;
+    }
 
-/* Navigation menu */
+    /* Navigation menu */
+    nav {
+       margin-left: 15%;
+       width: auto;
+    }
+    .nav_container {
+        width: 80%;
 
-.nav_container {
-    width: 80%;
+    }
 
-}
-.nav_blocItem{
-    width: auto;
-    height: auto;
-    margin: 0 15% 0 15%;
-}
-.nav_Object {
-    padding: 0;
-    overflow: visible;
-    margin-left: 10%;
-}
-.nav_Object::after {
-    display: none;
-}
+    .nav_blocItem {
+        width: auto;
+        height: auto;
+        margin: 0 5% 0 5%;
+    }
+
+    .nav_Object {
+        padding: 0;
+        overflow: visible;
+        margin-left: 10%;
+    }
+    .nav_Object::after {
+        display: none;
+    }
+    /* Main container */
+    .container {
+        width: 80%;
+    }
+    .backgroundGlobal {
+        background-size: 300%;
+    }
+    /* Article */
+    .menuBloc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #smallParagraph {
+        justify-content: center;
+    }
+    /* card */
+    .cardMenu {
+        width: auto;
+        margin: 5% 0 5% 0;
+    }
+    .imgCard {
+        width: 100%;
+        height: 150px;
+    }
+     /* Footer */
+     footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .footerBar {
+        justify-content: center;
+    }
+    .divContact {
+        width: auto;
+        justify-content: center;
+    }
+    #endLogo {
+        width: 70%;
+    }
+    .divEndLogo {
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+    }
 }
