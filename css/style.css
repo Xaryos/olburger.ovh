@@ -5,6 +5,11 @@
     font-family: "Kanit";
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -102,6 +107,10 @@ nav {
     width: 100%;
 }
 
+.hrefSpace {
+    width: 20%;
+}
+
 .nav_container {
     display: flex;
     justify-content: space-between;
@@ -114,8 +123,7 @@ nav {
 }
 
 .nav_blocItem {
-    width: 20%;
-    height: 30%;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -236,7 +244,7 @@ h2 {
 /* Card */
 
 .cardMenu {
-    width: 30%;
+    width: 100%;
     background-color: gray;
     border-radius: 5px;
     cursor: pointer;
@@ -244,9 +252,11 @@ h2 {
 
 }
 
+.aCardSpace {
+    margin: 0 2% 0 2%;
+}
 .cardMenu:hover {
     background-color: rgb(163, 162, 162);
-    width: 30%;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.486) 4px 5px 4px;
     transform: transition();
@@ -305,6 +315,14 @@ footer {
 
 
 /* *****************MEDIA QUERIES************************** */
+/* ------------------Low configuration -------------------- */
+/* @media only screen and (min-device-width : 700px) and (max-device-width : 1680px) {
+    /* Header */
+
+/* Main container */
+/* .container{
+        width: 80%;
+    } */
 
 
 /* ------------------Tablette------------------------------ */
@@ -386,16 +404,20 @@ footer {
         flex-direction: column-reverse;
         justify-content: center;
     }
+
     .footerBar {
         justify-content: center;
     }
+
     .divContact {
         width: auto;
         justify-content: center;
     }
+
     #endLogo {
         width: 50%;
     }
+
     .divEndLogo {
         margin: 1%;
         display: flex;
@@ -405,43 +427,43 @@ footer {
 
 /* ------------------------Téléphones------------------------- */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 420px)  {
-    
- /* //////// UP BUTTON ////////// */
- .buttonReturn {
-    width: 40px;
-    height: 40px;
-}
+@media only screen and (min-device-width : 320px) and (max-device-width : 420px) {
 
-.arrowUp {
+    /* //////// UP BUTTON ////////// */
+    .buttonReturn {
+        width: 40px;
+        height: 40px;
+    }
 
-    width: 25px;
-    height: 15px;
-}
+    .arrowUp {
 
-/* //////////////// HEADER ///////////// */
-.headerContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+        width: 25px;
+        height: 15px;
+    }
 
-header {
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
+    /* //////////////// HEADER ///////////// */
+    .headerContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
-/* Logo container */
-.logoContainer {
-    width: 40%;
-    height: auto;
-    align-self: center;
-}
+    header {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
 
-#logo {
-    width: 100%;
-}
+    /* Logo container */
+    .logoContainer {
+        width: 40%;
+        height: auto;
+        align-self: center;
+    }
+
+    #logo {
+        width: 100%;
+    }
 
     /* Title container */
     .titleContainer {
@@ -450,9 +472,10 @@ header {
 
     /* Navigation menu */
     nav {
-       margin-left: 15%;
-       width: auto;
+        margin-left: 15%;
+        width: auto;
     }
+
     .nav_container {
         width: 80%;
 
@@ -469,16 +492,20 @@ header {
         overflow: visible;
         margin-left: 10%;
     }
+
     .nav_Object::after {
         display: none;
     }
+
     /* Main container */
     .container {
         width: 80%;
     }
+
     .backgroundGlobal {
         background-size: 300%;
     }
+
     /* Article */
     .menuBloc {
         display: flex;
@@ -488,34 +515,41 @@ header {
     #smallParagraph {
         justify-content: center;
     }
+
     /* card */
     .cardMenu {
         width: auto;
         margin: 5% 0 5% 0;
     }
+
     .cardMenu:hover {
         width: auto;
     }
+
     .imgCard {
         width: 100%;
         height: 160px;
-        
     }
-     /* Footer */
-     footer {
+
+    /* Footer */
+    footer {
         flex-direction: column-reverse;
         justify-content: center;
     }
+
     .footerBar {
         justify-content: center;
     }
+
     .divContact {
         width: auto;
         justify-content: center;
     }
+
     #endLogo {
         width: 70%;
     }
+
     .divEndLogo {
         margin: 1%;
         display: flex;
